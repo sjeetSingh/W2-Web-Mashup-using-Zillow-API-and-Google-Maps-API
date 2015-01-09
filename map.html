@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: Sarabjeet Singh Pulaha
+    URL Address: http://omega.uta.edu/~sgp5369/project2/map.html
+-->
+<html lang="en">
+  
+  <head>
+    <title>Web Mashup: Display House Prices on a Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="map.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?&sensor=false"></script>
+  </head>
+  <style>
+  .boxStyle
+  {
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    margin-top: 50px;
+    overflow: scroll;
+    margin-left: 20px;
+  }
+  </style>
+  <body onload="initialize();">
+    
+    <form>
+       <label>House address: <input type="text" id="address"></label>
+       <label>City: <input type="text" id="city"></label>
+       <label>State: <input type="text" id="state"/></label>
+       <label>Zip Code: <input type="text" id="zipcode"/></label>
+       <input type="button" onclick="sendRequest();" value="Find"/>
+       <button type="reset" value="reset">Clear</button>
+    </form>
+
+    <div id="output">&nbsp;</div>    
+    <p id="test1"></p>
+     <div id="rev"></div> 
+    <center><div id="mapArea" style="width:600px;height:500px;"></div></center>
+    <p>To view the price of the property, click on the red balloon appearing on the map!</p>
+    <h4>History of places viewed along with prices: </h4>
+    <div class="boxStyle" id="text1"></div>
+    <div class="boxStyle" id="text2"></div> 
+  </body>
+</html>
