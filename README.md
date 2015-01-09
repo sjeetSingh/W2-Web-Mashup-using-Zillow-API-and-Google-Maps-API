@@ -1,4 +1,4 @@
-This repository contains the map.html and map.js files of the 2nd project. 
+This repository contains the map.html and map.js file of the 2nd project. 
 The description of this project is: 
 
 Web Services used by the Web Mashup
